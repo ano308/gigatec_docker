@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gigatech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" 
+rel="stylesheet">
+    <style>
+        
+        </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Gigatech</h1>
+        <form>
+  <input type="text" placeholder="Search...">
+  <button type="submit">Search</button>
+</form>
+        <nav>
+          <a href="#">All</a>
+          <a href="#">Wishlist</a>
+          <a href="#">Card</a>
+          <a href="#">Imprint</a>
+        </nav>
+    </header>
+    <main>
+        <div class="left-side">
+          <h3>Kategorien</h3>
+          <ul>
+            <li><a href="#">Computer</a></li>
+            <li><a href="#">Cables</a></li>
+            <li><a href="#">Iphone</a></li>
+            <li><a href="#">Audio</a></li>
+          </ul>
+        </div>
+        <div class="right-side">
+          <a 
+href="https://www.digitec.ch/de/s1/product/bose-quietcomfort-45-limited-edition-anc-24-h-kabelgebunden-kabellos-kopfhoerer-22649037"><img 
+class="hide-on-search" 
+src="https://audimediacenter-a.akamaihd.net/system/production/media/93095/images/c8fe33a6e07c3cca0ad7bcba0c13fecb98f24e5b/A204391_x500.jpg?1597057477product-1-image.jpg"></a>
+          <h3>Products</h3>
+          <div class="products">
+            <div class="product">
+              <img 
+src="https://audimediacenter-a.akamaihd.net/system/production/media/93095/images/c8fe33a6e07c3cca0ad7bcba0c13fecb98f24e5b/A204391_x500.jpg?1597057477product-1-image.jpg" 
+alt="Product 1 Image">
+              <h4>Iphone 54</h4>
+              <p>234513 Fr.</p>
+              <div class="button-container">
+                <button class="cart-button">Add to Cart</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+              </div>
+            </div>
+            <div class="product">
+              <img 
+src="https://audimediacenter-a.akamaihd.net/system/production/media/93095/images/c8fe33a6e07c3cca0ad7bcba0c13fecb98f24e5b/A204391_x500.jpg?1597057477" 
+alt="Product 2 Image">
+              <h4>Cable</h4>
+              <p>23525 Fr.</p>
+              <div class="button-container">
+                <button class="cart-button">Add to Cart</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+              </div>
+            </div>
+            <div class="product">
+              <img 
+src="https://audimediacenter-a.akamaihd.net/system/production/media/93095/images/c8fe33a6e07c3cca0ad7bcba0c13fecb98f24e5b/A204391_x500.jpg?1597057477" 
+alt="Product 3 Image">
+              <h4>Airpods</h4>
+              <p>234513 Fr.</p>
+              <div class="button-container">
+                <button class="cart-button">Add to Cart</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+              </div>
+            </div>
+          </div>
+    </main>
+    <script>
+const form = document.querySelector("form");
+const input = document.querySelector("input");
+const productsContainer = document.querySelector(".products");
+const products = document.querySelectorAll(".products .product");
+const highlightsImg = document.querySelector(".hide-on-search");
+input.addEventListener("input", (event) => {
+    const query = event.target.value.toLowerCase();
+    products.forEach((product) => {
+        const productName = 
+product.querySelector("h4").textContent.toLowerCase();
+        if (productName.includes(query)) {
+            product.style.display = "flex";
+            product.style.width = "48%";
+            product.style.marginBottom = "20px";
+        } else {
+            product.style.display = "none";
+        }
+    });
+    productsContainer.style.display = "flex";
+    productsContainer.style.flexWrap = "wrap";
+    productsContainer.style.justifyContent = "space-between";
+    highlightsImg.classList.add("hide");
+});
+const formBut = document.querySelector("form");
+const inputBut = document.querySelector("input");
+const productsBut = document.querySelectorAll(".products .product");
+const highlightsImgBut = document.querySelector(".hide-on-search");
+formBut.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const queryBut = input1.value.toLowerCase();
+    productsBut.forEach((product) => {
+        const productNameBut = 
+product.querySelector("h4").textContent.toLowerCase();
+        if (productNameBut.includes(queryBut)) {
+            product.style.display = "flex";
+            product.style.width = "30%";
+            product.style.marginBottom = "20px";
+        } else {
+            product.style.display = "none";
+        }
+    });
+    highlightsImgBut.classList.add("hide");
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+doctype html
+html
+head
+    title login
+    link(rel="stylesheet", href="/stylesheets/login.css")
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width,initial-scale=1')
+body
+    form(action="/acc" method="post")
+        h2 Login
+        div(class="input-field")
+            input(type="text", name="username", id="username", placeholder="Enter Username" required)
+        div(class="input-field")
+            input(type="password", name="password", id="password", placeholder="Enter Password" required)
+        input(type="submit", value="LogIn")
+    
