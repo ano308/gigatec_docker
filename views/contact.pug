@@ -1,0 +1,89 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Gigatech
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap' rel='stylesheet')
+  link(rel="stylesheet" href="/stylesheets/stylesheet.css")
+header.header
+  a(href="/") 
+    img.logo(src="/images/logo.jpeg", alt="Company-logo")
+  form
+    input(type='text' placeholder='Search...')
+    button(type='submit') Search
+  nav
+    a(href='/All') All
+    a(href='/wishlist') Wishlist
+    a(href='/cart') Cart
+    a(href='/login') Account
+main
+  .left-side
+    h3 Kategorien
+    ul
+      li
+        a(href='/tools') tools
+      li
+        a(href='/candles') candles
+      li
+        a(href='/periphery') periphery
+      li
+        a(href='/phone') phone
+      li
+        a(href='/tablet') tablet
+      li
+        a(href='/audio') audio
+  .right-side
+    a
+        h1 Kontakt-Adresse
+        p Andrin Buholzer
+        p Obermättlistrasse 1
+        p 6015 Luzern
+        p Schweiz
+        p E-Mail: karlsoch07@gmail.com
+        br
+        h2 Haftungsausschluss
+        p Der Autor übernimmt keinerlei Gewähr hinsichtlich der inhaltlichen Richtigkeit, Genauigkeit, Aktualität, Zuverlässigkeit und Vollständigkeit der Informationen.
+        p Haftungsansprüche gegen den Autor wegen Schäden materieller oder immaterieller Art, welche aus dem Zugriff oder der Nutzung bzw. Nichtnutzung der veröffentlichten Informationen, durch Missbrauch der Verbindung oder durch technische Störungen entstanden sind, werden ausgeschlossen.
+        p Alle Angebote sind unverbindlich. Der Autor behält es sich ausdrücklich vor, Teile der Seiten oder das gesamte Angebot ohne besondere Ankündigung zu verändern, zu ergänzen, zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen.
+        br
+        br
+        h2 Haftungsausschluss für Links
+        p Verweise und Links auf Webseiten Dritter liegen ausserhalb unseres Verantwortungsbereichs. Es wird jegliche Verantwortung für solche Webseiten abgelehnt. Der Zugriff und die Nutzung solcher Webseiten erfolgen auf eigene Gefahr des jeweiligen Nutzers.
+            br
+            br
+        h2 Urheberrechte
+        p Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf dieser Website, gehören ausschliesslich Andrin Buholzer oder den speziell genannten Rechteinhabern. Für die Reproduktion jeglicher Elemente ist die schriftliche Zustimmung des Urheberrechtsträgers im Voraus einzuholen.
+
+        a(href='https://www.swissanwalt.ch', target='_blank', rel='noopener') SwissAnwalt
+
+
+
+
+    .Footer
+      .Container
+        .Row
+          .Footer-Col-3
+            h3 Useful Links
+            ul
+              li
+                a(href="/about") about us
+              li 
+                a(href="/contact") impressum
+              li 
+                a(href="/return_policy") return policy
+
+
+
+          .Footer-Col-4
+            h3 Follow Us
+            ul
+              li Instagram
+                a(href="https://www.instagram.com/anojan_o7/")
+              li YouTube
+                a(href="https://www.youtube.com/@andrin4871/videos")
+        hr
+        p.Copyright Copyright & Copy; 2023 - Gigatech
+script(src="/javascripts/search.js")
